@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Social Media Dashboard</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="css/style.css"/>
+  <link id="theme" rel="stylesheet" href="css/dark-style.css"/>
+
+  <script> 
+    function toggleTheme() {  
+        let theme = document.getElementById('theme');
+        let btn = document.getElementById('toggle-btn'); 
+        
+
+        if (theme.getAttribute('href') == 'css/light-style.css') { 
+            theme.setAttribute('href', 'css/dark-style.css');
+            btn.style.marginLeft = "0px";
+        } else { 
+            theme.setAttribute('href', 'css/light-style.css');
+            btn.style.marginLeft = "20px";
+        } 
+    } 
+  </script> 
+</head>
+<body>
+  <div class="background"></div>
+  <div class="main-container m-m-t">
+    
+    <div class="container justify-content-space-between">
+      <div>
+        <h1>Social Media Dashboard</h1>
+        <p class="total-followers">Total Followers: 23,004</p>
+      </div>
+
+      <div>
+        <div class="flex m-t-5" onclick="toggleTheme()">
+          <div><p class="change-mode">Dark Mode</p> </div>
+          <div class="semi-circle"><div class="small-circle" id="toggle-btn"></div></div>
+        </div> 
+      </div>
+    </div>
+  
+    <div class="container justify-content-space-between">
+    <div class="item w-20 text-center border-top-facebook"> 
+      <p class="social-tag m-t"><img src="images/icon-facebook.svg"/>@nathanf</p>
+      <p class="number">1987</p> 
+      <p class="followers">Followers</p>
+      <p class="up"><img src="images/icon-up.svg"/>12 Today</p>
+      </div>
+    <div class="item w-20 text-center border-top-twitter">
+      <p class="social-tag m-t"><img src="images/icon-twitter.svg"/>@nathanf</p>
+      <p class="number">1044</p>
+      <p class="followers">Followers</p>
+      <p class="up"><img src="images/icon-up.svg"/>99 Today</p>
+    </div>
+    <div class="item w-20 text-center border-top-instgram">
+      <p class="social-tag m-t"><img src="images/icon-instagram.svg"/>@realnathanf</p>
+      <p class="number">11k</p>
+      <p class="followers">Followers</p>
+      <p class="up"><img src="images/icon-up.svg"/>1099 Today</p>
+    </div>
+    <div class="item w-20 text-center border-top-youtube">
+      <p class="social-tag m-t"><img src="images/icon-youtube.svg"/>Nathan F.</p>
+      <p class="number">8239</p>
+      <p class="followers">Subscribers</p>
+      <p class="down"><img src="images/icon-down.svg"/>144 Today</p>
+    </div>
+  </div>
+
+  <h2>Overview - Today</h2>
+  <div class="container justify-content-space-between">
+    <div class="item flex justify-content-space-between w-20 s-block">
+      <div class="social-tag">Page Views</div>
+      <div class="text-right"><img src="images/icon-facebook.svg"/></div>
+      <div class="number small-number">87</div>
+      <div class="up text-right m-t-16"><img src="images/icon-up.svg"/>3%</div>
+    </div>
+    <div class="item flex justify-content-space-between w-20 s-block">
+      <div class="social-tag">Likes</div>
+      <div class="text-right"><img src="images/icon-facebook.svg"/></div>
+      <div class="number small-number">52</div>
+      <div class="down text-right m-t-16"><img src="images/icon-down.svg"/>2%</div>
+    </div>
+    <div class="item flex justify-content-space-between w-20 s-block">
+      <div class="social-tag">Likes</div>
+      <div class="text-right"><img src="images/icon-instagram.svg"/></div>
+      <div class="number small-number">5462</div>
+      <div class="up text-right m-t-16"><img src="images/icon-up.svg"/>2257%</div>
+    </div>
+    <div class="item flex justify-content-space-between w-20 s-block">
+      <div class="social-tag">Profile Views</div>
+      <div class="text-right"><img src="images/icon-instagram.svg"/></div>
+      <p class="number small-number">52k</p>
+      <p class="up text-right m-t-16"><img src="images/icon-up.svg"/>1375%</p>
+    </div>
+    <div class="item flex justify-content-space-between w-20 s-block">
+      <div class="social-tag">Retweets</div>
+      <div class="text-right"><img src="images/icon-twitter.svg"/></div>
+      <p class="number small-number">117</p>
+      <p class="up text-right m-t-16"><img src="images/icon-up.svg"/>303%</p>
+    </div>
+    <div class="item flex justify-content-space-between w-20 s-block">
+      <div class="social-tag">Likes</div>
+      <div class="text-right"><img src="images/icon-twitter.svg"/></div>
+      <p class="number small-number">507</p>
+      <p class="up text-right m-t-16"><img src="images/icon-up.svg"/>553%</p>
+    </div>
+    <div class="item flex justify-content-space-between w-20 s-block">
+      <div class="social-tag">Likes</div>
+      <div class="text-right"><img src="images/icon-youtube.svg"/></div>
+      <p class="number small-number">107</p>
+      <p class="down text-right m-t-16"><img src="images/icon-down.svg"/>19%</p>
+    </div>
+    <div class="item flex justify-content-space-between w-20 s-block">
+      <div class="social-tag">Total Views</div>
+      <div class="text-right"><img src="images/icon-youtube.svg"/></div>
+      <p class="number small-number">1407</p>
+      <p class="down text-right m-t-16"><img src="images/icon-down.svg"/>12%</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

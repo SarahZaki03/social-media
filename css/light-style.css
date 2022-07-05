@@ -1,0 +1,30 @@
+html, body{
+    background: hsl(0, 0%, 100%)
+}
+.background{
+    background: hsl(225, 100%, 98%)
+}
+h1, h2{
+    color: hsl(230, 17%, 14%);
+}
+.semi-circle{
+    background: hsl(230, 22%, 74%);
+}
+.small-circle{
+    background-color:hsl(225, 100%, 98%)
+}
+.change-mode{
+    color: hsl(230, 17%, 14%);
+}
+.item{
+    background: hsl(227, 47%, 96%)
+}
+.item:hover{
+    background-color: hsl(225, 100%, 98%)
+}
+.total-followers, .social-tag, .followers{
+    color: hsl(228, 34%, 66%);
+}
+.number, .small-number{
+    color: hsl(230, 17%, 14%)
+}

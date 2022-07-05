@@ -1,0 +1,24 @@
+html, body{
+    background: hsl(230, 17%, 14%);
+}
+.background{
+    background: hsl(232, 19%, 15%);
+}
+.semi-circle{
+    background: linear-gradient( 45deg , hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+}
+.small-circle{
+    background-color:hsl(228, 28%, 20%);
+}
+.item{
+    background: hsl(228, 28%, 20%);
+}
+.item:hover{
+    background-color: hsl(218, 24%, 20%);
+}
+.total-followers, .social-tag, .followers{
+    color: hsl(228, 34%, 66%);
+}
+.number, .small-number{
+    color: white;
+}
